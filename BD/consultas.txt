@@ -1,0 +1,25 @@
+- Hay consultas en todas las plantas para su tipo y su clima. Ej:
+
+<?php 
+
+				$planta = mysqli_query($conexion, "select * from planta where nombre = 'naranjo'");
+				
+					while ($plantaDatos = mysqli_fetch_array($planta))
+					{
+						$clima = mysqli_query($conexion, "select * from clima where idClima = '".$plantaDatos['clima']."'");
+						$tipo_planta = mysqli_query($conexion, "select * from tipo_planta where idTipo_planta = '".$plantaDatos['tipo_planta']."'");
+						while($categoria = mysqli_fetch_array($tipo_planta))
+						{
+							echo " <p> <strong>Categoria:</strong> ".$categoria['nombre']."  </p>";
+						}
+
+						while($clima = mysqli_fetch_array($clima))
+						{
+							echo " <p> <strong>Clima:</strong> ".$clima['nombre']."  </p>";
+						}
+          }
+?>
+
+- Hay una consulta en el login para verificar usuario y contraseña
+
+$resultado = mysqli_query($conexion,"select * from usuario where usuario = '$usuario' and contrasena = '$password' ");
