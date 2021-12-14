@@ -2,9 +2,9 @@
 
 function conectar()
 {
-	$server= "127.0.0.1:3306";
-    $usuario= "Marcos";
-    $password= "password";
+	$server= $(hostname -I);
+    $usuario= "debianDB";
+    $password= "debianDB";
     $BD= "jardin";
 
     $conexion = mysqli_connect($server,$usuario, $password, $BD);
