@@ -2,7 +2,7 @@
 
 function conectar()
 {
-	$server= $(hostname -I);
+	$server= "127.0.0.1:3306";
     $usuario= "debianDB";
     $password= "debianDB";
     $BD= "jardin";
