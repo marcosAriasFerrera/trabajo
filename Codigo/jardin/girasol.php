@@ -73,6 +73,12 @@ $conexion = conectar();
 	<!-- Este div contiene los principales contenidos de la página -->
 	<div id="contenido">
 		
+		<!-- Este div contiene las imágenes -->
+		<div>
+			<img src="IMG/girasol1.jpg" width="100%">
+			<img src="IMG/girasol2.jpg" width="100%">
+		</div>
+		
 		<!-- Este div contiene el texto -->
 		<div>
 			<h2 style="text-align:center">Girasol</h2>
@@ -107,12 +113,6 @@ $conexion = conectar();
 
 			?>
 
-		</div>
-
-		<!-- Este div contiene las imágenes -->
-		<div>
-			<img src="IMG/girasol1.jpg" width="100%">
-			<img src="IMG/girasol2.jpg" width="100%">
 		</div>
 
 	</div>
